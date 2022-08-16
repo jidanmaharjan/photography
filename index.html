@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <!-- <video src="assets/testwork.mp4" class="back" muted autoplay loop playsinline></video> -->
+        <nav>
+            <a href="index.html"><img src="assets/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#works">MY WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <i class="fa fa-bars toggler" onclick="toggleMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>A Simple <span class="snapanimation">Click</span>  Makes<div class="shakeanimation">Memories</div> </h1>
+            <p>Lets make your next snap be precious<br> And it's joy be Wonderful</p>
+            <a href="#about" class="hero-btn" >Explore more of me</a>
+            <a href="#works" class="hero-btn-reverse" >Contact Me</a>
+            
+        </div>
+    </section>
+
+    <script>
+        let navLinks=document.getElementById("navLinks");
+        let toggle = 0;
+        function toggleMenu(){
+            if( toggle === 0){
+             navLinks.style.right="0";
+             toggle = 1;   
+            }
+            else{
+             navLinks.style.right="-225px";
+             toggle = 0;   
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
